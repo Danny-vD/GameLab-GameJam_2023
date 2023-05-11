@@ -78,6 +78,12 @@ namespace Console.Console
 		protected override void Awake()
 		{
 			base.Awake();
+
+#if UNITY_EDITOR
+
+			// Set the visibility to 'show' in the hierarchy to prevent an assertion error
+			UnityEditor.SceneVisibilityManager.instance.Show(gameObject, false);
+#endif
 			DontDestroyOnLoad(true);
 
 			ObjectSelector = GetComponent<ObjectSelector>();
@@ -183,7 +189,7 @@ namespace Console.Console
 			{
 				console.text += formattedLog;
 			}
-			
+
 			Instance.SetScrollbarToBottom();
 		}
 
