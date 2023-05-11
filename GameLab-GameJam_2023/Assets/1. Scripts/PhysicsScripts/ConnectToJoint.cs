@@ -17,7 +17,6 @@ namespace PhysicsScripts
 
 		public void Connect()
 		{
-			ToConnect.position  = CachedTransform.position;
 			joint.connectedBody = ToConnect;
 		}
 	}

@@ -1,48 +1,29 @@
 ﻿using Console.Commands;
-using PhysicsScripts;
-using UnityEngine;
+using UnityEngine.SceneManagement;
 using VDFramework;
 
 namespace Player
 {
-	public class ResetPosition : BetterMonoBehaviour
+	public class ResetScene : BetterMonoBehaviour
 	{
-		[SerializeField]
-		private Rigidbody rigidbdy;
-
-		[SerializeField]
-		private ConnectToJoint connectToJoint;
-
-		private Vector3 originalPosition;
-
-		private void Awake()
-		{
-			originalPosition = CachedTransform.position;
-
-			if (!rigidbdy)
-			{
-				rigidbdy = GetComponent<Rigidbody>();
-			}
-		}
+		private AbstractCommand resetCommand;
 
 		private void Start()
 		{
-			Command resetCommand = new Command("Reset", SetPositionToOriginal);
+			resetCommand = new Command("Reset", SetPositionToOriginal);
 			resetCommand.AddAlias("reset");
 			
 			CommandManager.AddCommand(resetCommand);
 		}
 
-		private void SetPositionToOriginal()
+		private static void SetPositionToOriginal()
 		{
-			CachedTransform.position = originalPosition;
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		}
 
-			if (rigidbdy)
-			{
-				rigidbdy.velocity = Vector3.zero;
-			}
-			
-			connectToJoint.Connect();
+		private void OnDestroy()
+		{
+			CommandManager.RemoveCommand(resetCommand);
 		}
 	}
 }
