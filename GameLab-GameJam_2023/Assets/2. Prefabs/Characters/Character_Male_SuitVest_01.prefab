@@ -1266,10 +1266,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.10788696
+  m_Radius: 0.0843791
   m_Height: 0.43154785
   m_Direction: 0
-  m_Center: {x: -0.21577393, y: 0, z: 0}
+  m_Center: {x: -0.21577224, y: 0.023507882, z: 0.0000000010240804}
 --- !u!54 &963583212132082076
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!144 &6293123373780232811
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1429,10 +1429,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.11979278
-  m_Height: 0.39930925
+  m_Radius: 0.09011251
+  m_Height: 0.39930928
   m_Direction: 0
-  m_Center: {x: -0.19965462, y: 0, z: 0}
+  m_Center: {x: -0.19965462, y: -0.0000000066037646, z: 0.01399422}
 --- !u!54 &3296770383747545052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1459,7 +1459,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!144 &882098512141623484
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2007,10 +2007,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.10788683
+  m_Radius: 0.08262708
   m_Height: 0.4315473
   m_Direction: 0
-  m_Center: {x: 0.21577366, y: 0, z: 0}
+  m_Center: {x: 0.2157736, y: -0.025259787, z: 0.000000001625029}
 --- !u!54 &2862671878022496121
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2037,7 +2037,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!144 &906790354199656238
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2301,10 +2301,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.11979278
+  m_Radius: 0.09679592
   m_Height: 0.39930925
   m_Direction: 0
-  m_Center: {x: 0.19965462, y: 0, z: 0}
+  m_Center: {x: 0.19965352, y: -0.0000000019917963, z: -0.004605562}
 --- !u!54 &52208727342362915
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2331,7 +2331,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!144 &1297094631303916717
 CharacterJoint:
   m_ObjectHideFlags: 0
