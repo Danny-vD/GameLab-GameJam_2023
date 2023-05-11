@@ -55,16 +55,17 @@ namespace CameraScripts
 				RotateAroundTarget(delta);
 			}
 
-			if (Physics.Raycast(CachedTransform.position, -CachedTransform.forward, out RaycastHit hitinfo, maximumDistance, ~ignoreLayers))
+			Vector3 currentPosition = CachedTransform.position;
+			Vector3 direction = currentPosition - CachedTransform.forward * maximumDistance + offset - currentPosition;
+			
+			if (Physics.Raycast(currentPosition, direction, out RaycastHit hitinfo, maximumDistance, ~ignoreLayers))
 			{
 				CachedTransform.position = hitinfo.point + CachedTransform.forward * distancePadding;
 			}
 			else
 			{
-				CachedTransform.position -= CachedTransform.forward * maximumDistance;
+				CachedTransform.position -= CachedTransform.forward * maximumDistance + offset;
 			}
-
-			CachedTransform.Translate(offset);
 		}
 
 		private void RotateAroundTarget(Vector2 delta)
