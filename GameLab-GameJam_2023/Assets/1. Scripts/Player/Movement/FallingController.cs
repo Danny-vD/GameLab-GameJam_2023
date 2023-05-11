@@ -7,7 +7,6 @@ namespace Player.Movement
 {
     public class FallingController : BetterMonoBehaviour
     {
-        [FormerlySerializedAs("movement")]
         [SerializeField]
         private InputActionReference movementInput;
 
