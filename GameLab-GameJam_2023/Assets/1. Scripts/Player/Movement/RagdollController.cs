@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 using VDFramework;
 
 namespace Player.Movement
 {
-    public class FallingController : BetterMonoBehaviour
+    public class RagdollController : BetterMonoBehaviour
     {
         [SerializeField]
         private InputActionReference movementInput;
@@ -15,9 +14,12 @@ namespace Player.Movement
         
         private Rigidbody rigidbdy;
 
+        private Transform cameraTransform;
+
         private void Awake()
         {
-            rigidbdy = GetComponent<Rigidbody>();
+            cameraTransform = Camera.main!.transform;
+            rigidbdy        = GetComponent<Rigidbody>();
         }
 
         private void OnEnable()
@@ -37,7 +39,15 @@ namespace Player.Movement
 
         private void Move(Vector2 input)
         {
-            Vector3 force = new Vector3(input.x, 0, input.y);
+            Vector3 cameraForward = cameraTransform.forward;
+            cameraForward.y = 0;
+            cameraForward.Normalize();
+            
+            Vector3 cameraRight = cameraTransform.right;
+            cameraRight.y = 0;
+            cameraRight.Normalize();
+
+            Vector3 force = cameraForward * input.y + cameraRight * input.x;
 
             rigidbdy.AddForce(force * forceMultiplier);
         }
