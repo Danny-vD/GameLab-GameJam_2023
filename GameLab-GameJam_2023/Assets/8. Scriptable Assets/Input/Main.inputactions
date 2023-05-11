@@ -150,6 +150,17 @@
                 },
                 {
                     "name": "",
+                    "id": "08c70942-403b-47a1-80a9-1dcffaef89b0",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Open Console",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "faf3daee-162b-4daf-ac01-ee6c95e376c1",
                     "path": "<Keyboard>/leftCtrl",
                     "interactions": "",
