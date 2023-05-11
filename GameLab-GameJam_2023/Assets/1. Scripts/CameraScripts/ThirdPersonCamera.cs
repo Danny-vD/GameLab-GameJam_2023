@@ -28,7 +28,7 @@ namespace CameraScripts
 		private Vector2 minMaxYRotation = new Vector2(0, 90);
 
 		[SerializeField, Tooltip("Layers that will be allowed to block the camera line of sight to the target")]
-		private LayerMask ignoreLayers = 384; // 1 << 7 + 1 << 8 (Player + AllowBlockCamer)
+		private LayerMask ignoreLayers = 384; // 1 << 7 + 1 << 8 (Player + AllowBlockCamera)
 
 		private float totalRotatedY;
 
