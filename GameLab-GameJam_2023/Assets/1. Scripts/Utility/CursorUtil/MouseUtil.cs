@@ -40,6 +40,10 @@ namespace Utility.CursorUtil
 			/// </summary>
 			public void Update()
 			{
+				if (Mouse.current == null)
+				{
+					return;
+				}
 				if (checkButtonDown())
 				{
 					ButtonPressed = true;
@@ -558,16 +562,28 @@ namespace Utility.CursorUtil
 
 		private static Vector2 GetMousePosition2D()
 		{
+            if (Mouse.current == null)
+            {
+				return Vector2.zero;
+            }
 			return Mouse.current.position.ReadValue();
 		}
 
 		private static Vector2 GetMouseScroll()
 		{
+			if (Mouse.current == null)
+			{
+				return Vector2.zero;
+			}
 			return Mouse.current.scroll.ReadValue();
 		}
 
 		private static Func<bool> GetButtonPressedThisFrame(MouseButton mouseButton)
 		{
+			if (Mouse.current == null)
+			{
+				return null;
+			}
 			return mouseButton switch
 			{
 				MouseButton.Left => () => Mouse.current.leftButton.wasPressedThisFrame,
@@ -581,6 +597,10 @@ namespace Utility.CursorUtil
 
 		private static Func<bool> GetButtonReleasedThisFrame(MouseButton mouseButton)
 		{
+			if (Mouse.current == null)
+			{
+				return null;
+			}
 			return mouseButton switch
 			{
 				MouseButton.Left => () => Mouse.current.leftButton.wasReleasedThisFrame,
