@@ -27,6 +27,9 @@ namespace CameraScripts
 		[SerializeField, Tooltip("The minimum and maximum amount that can be rotated around the camera local X-axis")]
 		private Vector2 minMaxYRotation = new Vector2(0, 90);
 
+		[SerializeField, Tooltip("Layers that will be allowed to block the camera line of sight to the target")]
+		private LayerMask ignoreLayers = 384; // 1 << 7 + 1 << 8 (Player + AllowBlockCamera)
+
 		private float totalRotatedY;
 
 		private void OnEnable()
@@ -52,8 +55,17 @@ namespace CameraScripts
 				RotateAroundTarget(delta);
 			}
 
-			CachedTransform.position -= CachedTransform.forward * maximumDistance;
-			CachedTransform.Translate(offset);
+			Vector3 currentPosition = CachedTransform.position;
+			Vector3 direction = currentPosition - CachedTransform.forward * maximumDistance + offset - currentPosition;
+			
+			if (Physics.Raycast(currentPosition, direction, out RaycastHit hitinfo, maximumDistance, ~ignoreLayers))
+			{
+				CachedTransform.position = hitinfo.point + CachedTransform.forward * distancePadding;
+			}
+			else
+			{
+				CachedTransform.position -= CachedTransform.forward * maximumDistance + offset;
+			}
 		}
 
 		private void RotateAroundTarget(Vector2 delta)

@@ -719,6 +719,9 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   rotationSpeed: {x: 1, y: 1}
   minMaxYRotation: {x: 0, y: 90}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &1078465575
 GameObject:
   m_ObjectHideFlags: 0
