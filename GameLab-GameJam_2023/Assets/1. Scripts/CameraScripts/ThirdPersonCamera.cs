@@ -52,7 +52,15 @@ namespace CameraScripts
 				RotateAroundTarget(delta);
 			}
 
-			CachedTransform.position -= CachedTransform.forward * maximumDistance;
+			if (Physics.Raycast(CachedTransform.position, -CachedTransform.forward, out RaycastHit hitinfo, maximumDistance))
+			{
+				// Set the camera to that position - padding
+			}
+			else
+			{
+				CachedTransform.position -= CachedTransform.forward * maximumDistance;
+			}
+
 			CachedTransform.Translate(offset);
 		}
 
