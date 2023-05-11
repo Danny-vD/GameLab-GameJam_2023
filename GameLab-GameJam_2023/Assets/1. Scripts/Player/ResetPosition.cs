@@ -1,4 +1,5 @@
 ﻿using Console.Commands;
+using PhysicsScripts;
 using UnityEngine;
 using VDFramework;
 
@@ -8,6 +9,9 @@ namespace Player
 	{
 		[SerializeField]
 		private Rigidbody rigidbdy;
+
+		[SerializeField]
+		private ConnectToJoint connectToJoint;
 
 		private Vector3 originalPosition;
 
@@ -37,6 +41,8 @@ namespace Player
 			{
 				rigidbdy.velocity = Vector3.zero;
 			}
+			
+			connectToJoint.Connect();
 		}
 	}
 }

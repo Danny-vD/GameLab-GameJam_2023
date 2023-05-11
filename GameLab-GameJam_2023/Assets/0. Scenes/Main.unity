@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 684885345}
   - component: {fileID: 684885344}
   - component: {fileID: 684885346}
+  - component: {fileID: 684885347}
   m_Layer: 0
   m_Name: Joint
   m_TagString: Untagged
@@ -246,6 +247,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   releaseInput: {fileID: -5947568675553907808, guid: f6431af00ce034b438061d23ae548c4d, type: 3}
+--- !u!114 &684885347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684885342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9677a2d99d40278a09f73fe67abd9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToConnect: {fileID: 830197143}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +414,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8809520902846414759, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
+      propertyPath: connectToJoint
+      value: 
+      objectReference: {fileID: 684885347}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -564,7 +582,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.27114567, y: 0.0000015179103, z: -0.00038128727}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
