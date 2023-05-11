@@ -173,6 +173,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5666309747843001958, guid: a727dd0ae6d15497e8e020e08a0e075a, type: 3}
   m_PrefabInstance: {fileID: 831491125}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &608401653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8603248583225160618, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
+  m_PrefabInstance: {fileID: 709708425}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &684885342
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,11 +460,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
---- !u!4 &709708428 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5437535051035600940, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
-  m_PrefabInstance: {fileID: 709708425}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &756994075
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -692,15 +692,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 2.951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &963194229
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -709,26 +709,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eba462fdc8974643b1dc0e3961ff4910, type: 3}
+  m_Script: {fileID: 11500000, guid: 8441531e3cf47d843a02cbff5ba5713a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 709708428}
-  copyCoordinates: -1
-  copyLocalPosition: 0
-  setLocalPosition: 0
-  globalPositionOffset: {x: 0, y: 8, z: 0}
-  parentPositionOffset: {x: 0, y: 0, z: 0}
-  targetPositionOffset: {x: 0, y: 0, z: 0}
-  localPositionOffset: {x: 0, y: 0, z: 0}
-  copyAngles: 0
-  copyLocalRotation: 0
-  setLocalRotation: 1
-  globalRotationOffset: {x: 0, y: 0, z: 0}
-  parentRotationOffset: {x: 0, y: 0, z: 0}
-  targetRotationOffset: {x: 0, y: 0, z: 0}
-  localRotationOffset: {x: 0, y: 0, z: 0}
-  copyScale: 0
-  scaleOffset: {x: 0, y: 0, z: 0}
+  mouseDelta: {fileID: 8860478171473950567, guid: f6431af00ce034b438061d23ae548c4d, type: 3}
+  target: {fileID: 608401653}
+  maximumDistance: 8
+  distancePadding: 1
+  offset: {x: 0, y: 0, z: 0}
+  rotationSpeed: {x: 1, y: 1}
+  minMaxYRotation: {x: 0, y: 90}
 --- !u!1 &1078465575
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,10 +847,6 @@ PrefabInstance:
     - target: {fileID: 3645933861767502547, guid: a45a6c814839f8d43b11ee204e6d2d6b, type: 3}
       propertyPath: m_Name
       value: ConsoleCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3645933861767502547, guid: a45a6c814839f8d43b11ee204e6d2d6b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3645933861767502551, guid: a45a6c814839f8d43b11ee204e6d2d6b, type: 3}
       propertyPath: m_Pivot.x

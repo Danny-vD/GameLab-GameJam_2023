@@ -10,13 +10,14 @@ namespace Player
 
 		private void Start()
 		{
-			resetCommand = new Command("Reset", SetPositionToOriginal);
+			resetCommand = new Command("Reset", ReloadScene);
 			resetCommand.AddAlias("reset");
+			resetCommand.SetHelpMessage("Reload the current scene");
 			
 			CommandManager.AddCommand(resetCommand);
 		}
 
-		private static void SetPositionToOriginal()
+		private static void ReloadScene()
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		}
