@@ -1,4 +1,4 @@
-﻿//#define UNITY_INPUT_SYSTEM //NOTE: Define when needed
+﻿#define UNITY_INPUT_SYSTEM //NOTE: Define when needed
 
 using System;
 using System.Linq;

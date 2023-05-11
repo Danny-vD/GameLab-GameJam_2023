@@ -1,9 +1,9 @@
-﻿//#define NewInput //NOTE: Define when needed
+﻿#define UNITY_INPUT_SYSTEM //NOTE: Define when needed
 
 using System;
 using UnityEngine;
 
-#if NewInput
+#if UNITY_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 
 #else
@@ -15,7 +15,7 @@ namespace Console.Console
 	[Serializable]
 	public class ConsoleInputChecker
 	{
-#if NewInput
+#if UNITY_INPUT_SYSTEM
 		[SerializeField]
 		private InputActionReference openConsoleInput;
 

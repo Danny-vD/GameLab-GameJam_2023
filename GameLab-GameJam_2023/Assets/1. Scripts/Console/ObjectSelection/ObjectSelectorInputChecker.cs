@@ -1,10 +1,11 @@
-﻿//#define UNITY_INPUT_SYSTEM //NOTE: Define when needed
+﻿#define UNITY_INPUT_SYSTEM //NOTE: Define when needed
 
 using System;
 using UnityEngine;
 
 #if UNITY_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+
 #else
 using System.Collections.Generic;
 using System.Linq;
