@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using VDFramework;
 
 namespace Player.Movement
 {
     public class FallingController : BetterMonoBehaviour
     {
+        [FormerlySerializedAs("movement")]
         [SerializeField]
-        private InputActionReference movement;
+        private InputActionReference movementInput;
 
         [SerializeField]
         private float forceMultiplier = 2;
@@ -21,12 +23,12 @@ namespace Player.Movement
 
         private void OnEnable()
         {
-            movement.action.Enable();
+            movementInput.action.Enable();
         }
 
         private void FixedUpdate()
         {
-            Vector2 input = movement.action.ReadValue<Vector2>();
+            Vector2 input = movementInput.action.ReadValue<Vector2>();
 
             if (input.sqrMagnitude > 0)
             {
