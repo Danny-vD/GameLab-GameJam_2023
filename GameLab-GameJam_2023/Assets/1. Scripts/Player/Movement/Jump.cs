@@ -25,7 +25,12 @@ namespace Player.Movement
 		{
 			jumpInput.action.Enable();
 		}
-		
+
+		private void OnDisable()
+		{
+			jumpInput.action.Disable();
+		}
+
 		private void Jump(InputAction.CallbackContext obj)
 		{
 			rigidbdy.AddForce(Vector3.up * jumpForce);

@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 684885343}
   - component: {fileID: 684885345}
   - component: {fileID: 684885344}
+  - component: {fileID: 684885346}
   m_Layer: 0
   m_Name: Joint
   m_TagString: Untagged
@@ -232,6 +233,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &684885346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684885342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4aad8d620724e909b894e99786cb050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  releaseInput: {fileID: -5947568675553907808, guid: f6431af00ce034b438061d23ae548c4d, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +395,10 @@ PrefabInstance:
     - target: {fileID: 6375354026686297636, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
       propertyPath: m_Name
       value: Character_Male_SuitVest_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286879190386616760, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
