@@ -1,7 +1,5 @@
-﻿using System;
-using Events;
+﻿using Events;
 using Events.Gameplay;
-using Gameplay;
 using Gameplay.Interactables;
 using TMPro;
 using VDFramework;
