@@ -241,6 +241,8 @@ MonoBehaviour:
   toEnable:
   - {fileID: 8445257795644114888}
   disableBehaviour: {fileID: 7512208670950964043}
+  colliders:
+  - {fileID: 350643151841765726}
 --- !u!136 &350643151841765726
 CapsuleCollider:
   m_ObjectHideFlags: 0

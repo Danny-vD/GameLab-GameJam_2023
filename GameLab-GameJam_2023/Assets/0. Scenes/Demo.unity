@@ -20906,6 +20906,7 @@ GameObject:
   - component: {fileID: 511667883}
   - component: {fileID: 511667882}
   - component: {fileID: 511667881}
+  - component: {fileID: 511667885}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -21006,6 +21007,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &511667885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511667880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f58d36e40a24beea3288dca7edcc711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostageObject: {fileID: 1790061555}
+  jewelryObject: {fileID: 929104590}
+  moneyObject: {fileID: 906046027}
 --- !u!1001 &513722724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40948,6 +40964,8 @@ MonoBehaviour:
   - {fileID: 928349309}
   - {fileID: 1844521998}
   disableBehaviour: {fileID: 969630803}
+  colliders:
+  - {fileID: 969630805}
 --- !u!65 &969630805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55173,6 +55191,8 @@ MonoBehaviour:
   - {fileID: 195870864}
   - {fileID: 205915100}
   disableBehaviour: {fileID: 1318889116}
+  colliders:
+  - {fileID: 1318889119}
 --- !u!65 &1318889118
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73577,6 +73597,8 @@ MonoBehaviour:
   - {fileID: 445446034}
   - {fileID: 1436815172}
   disableBehaviour: {fileID: 1691232893}
+  colliders:
+  - {fileID: 1691232894}
 --- !u!1001 &1694109226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75088,6 +75110,8 @@ MonoBehaviour:
   - {fileID: 1891488525}
   - {fileID: 114836831}
   disableBehaviour: {fileID: 1711942872}
+  colliders:
+  - {fileID: 1711942874}
 --- !u!65 &1711942874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81883,6 +81907,8 @@ MonoBehaviour:
   - {fileID: 483924187}
   - {fileID: 1991379948}
   disableBehaviour: {fileID: 1853061609}
+  colliders:
+  - {fileID: 1853061611}
 --- !u!65 &1853061611
 BoxCollider:
   m_ObjectHideFlags: 0

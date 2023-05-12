@@ -378,6 +378,8 @@ MonoBehaviour:
   - {fileID: 2825383246984571250}
   - {fileID: 8744087471089228086}
   disableBehaviour: {fileID: 2666523770353814775}
+  colliders:
+  - {fileID: 8934055893195696334}
 --- !u!65 &8934055893195696334
 BoxCollider:
   m_ObjectHideFlags: 0
