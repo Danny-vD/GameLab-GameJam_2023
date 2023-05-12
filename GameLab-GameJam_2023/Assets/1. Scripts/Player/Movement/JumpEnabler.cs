@@ -7,19 +7,27 @@ namespace Player.Movement
 	public class JumpEnabler : BetterMonoBehaviour
 	{
 		private GroundedChecker groundedChecker;
-		
+
 		private Jump jump;
 
 		private void Awake()
 		{
 			groundedChecker = GetComponentInParent<GroundedChecker>();
-			jump = GetComponent<Jump>();
-
-			jump.OnJump += OnJump;
+			jump            = GetComponent<Jump>();
 
 			StopChecking();
-			
+
 			PlayerReachedGroundEvent.ParameterlessListeners += StartChecking;
+		}
+
+		private void OnEnable()
+		{
+			jump.OnJump += DisableJump;
+		}
+
+		private void OnDisable()
+		{
+			jump.OnJump -= DisableJump;
 		}
 
 		private void StartChecking()
@@ -34,10 +42,13 @@ namespace Player.Movement
 
 		private void Update()
 		{
-			CanJump(groundedChecker.IsGrounded);
+			if (!jump.enabled) // NOTE: Leave jump on until we jump?
+			{
+				CanJump(groundedChecker.IsGrounded);
+			}
 		}
 
-		private void OnJump()
+		private void DisableJump()
 		{
 			CanJump(false);
 		}

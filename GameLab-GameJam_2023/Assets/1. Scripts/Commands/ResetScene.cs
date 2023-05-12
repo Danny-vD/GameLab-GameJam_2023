@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using VDFramework;
 
-namespace Player
+namespace Commands
 {
 	public class ResetScene : BetterMonoBehaviour
 	{
