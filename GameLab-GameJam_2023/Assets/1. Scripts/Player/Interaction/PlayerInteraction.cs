@@ -44,7 +44,7 @@ namespace Player.Interaction
 
 			if (!lastInteractable.CanInteract())
 			{
-				interactables.Remove(lastInteractable);
+				interactables.RemoveAll(interactable => interactable == lastInteractable);
 			}
 		}
 
@@ -52,11 +52,6 @@ namespace Player.Interaction
 		{
 			if (other.TryGetComponent(out IInteractable interactable))
 			{
-				if (interactables.Contains(interactable))
-				{
-					return;
-				}
-
 				interactables.Add(interactable);
 				
 				EnableInput();

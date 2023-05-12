@@ -23,6 +23,8 @@ namespace UI.Counters
 		private void Start()
 		{
 			HostagesRemaining = FindObjectsOfType<HostageInteract>().Length;
+			
+			UpdateUI();
 		}
 		
 		private void UpdateRemaining()
@@ -35,6 +37,11 @@ namespace UI.Counters
 				EventManager.RaiseEvent(new FreedAllHostagesEvent());
 			}
 
+			UpdateUI();
+		}
+
+		private void UpdateUI()
+		{
 			amountLabel.text = HostagesRemaining.ToString();
 		}
 	}
