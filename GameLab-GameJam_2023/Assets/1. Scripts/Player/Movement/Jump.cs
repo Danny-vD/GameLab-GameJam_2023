@@ -4,7 +4,7 @@ using VDFramework;
 
 namespace Player.Movement
 {
-	public class CharacterJump : BetterMonoBehaviour
+	public class Jump : BetterMonoBehaviour
 	{
 		[SerializeField]
 		private InputActionReference jumpInput;
