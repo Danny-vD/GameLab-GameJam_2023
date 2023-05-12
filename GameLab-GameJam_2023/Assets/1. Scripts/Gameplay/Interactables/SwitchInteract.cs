@@ -9,17 +9,25 @@ namespace Gameplay.Interactables
 
 		[SerializeField]
 		private GameObject[] toEnable;
-		
+
+		[SerializeField]
+		private Behaviour disableBehaviour;
+
 		public override void Interact()
 		{
 			foreach (GameObject obj in toDisable)
 			{
 				obj.SetActive(false);
 			}
-			
+
 			foreach (GameObject obj in toEnable)
 			{
 				obj.SetActive(true);
+			}
+
+			if (disableBehaviour)
+			{
+				disableBehaviour.enabled = false;
 			}
 
 			base.Interact();
