@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 436294}
   - component: {fileID: 3397876}
   - component: {fileID: 2374252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_DisplayCase_Glass_02_Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 432570}
   - component: {fileID: 3368390}
   - component: {fileID: 2343478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_DisplayCase_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 3391122}
   - component: {fileID: 2328888}
   - component: {fileID: 65437207805843714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_DisplayCase_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8511015627425061622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jewelry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7098608191169962828}
   - component: {fileID: 6111225329249168606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TriggerCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

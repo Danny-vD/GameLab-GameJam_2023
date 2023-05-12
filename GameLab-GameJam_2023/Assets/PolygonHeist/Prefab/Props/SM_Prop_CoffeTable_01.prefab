@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2394416}
   - component: {fileID: 64637078661036972}
   - component: {fileID: 1891161107145383888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_CoffeTable_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 3353180}
   - component: {fileID: 2371748}
   - component: {fileID: 2628081591282625313}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_CoffeTable_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

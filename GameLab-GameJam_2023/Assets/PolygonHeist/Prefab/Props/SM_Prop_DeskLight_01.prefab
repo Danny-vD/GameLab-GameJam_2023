@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2354152}
   - component: {fileID: 64045945026903694}
   - component: {fileID: 5275598024589643070}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_DeskLight_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
