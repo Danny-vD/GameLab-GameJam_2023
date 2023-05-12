@@ -36,6 +36,13 @@ namespace PhysicsScripts
 			joint.connectedBody = null;
 			
 			OnRelease.Invoke();
+			
+			releaseInput.action.performed -= ReleaseJoint;
+		}
+
+		private void OnDestroy()
+		{
+			releaseInput.action.performed -= ReleaseJoint;
 		}
 	}
 }
