@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7610712929263996988}
   - component: {fileID: 7512208670950964043}
   - component: {fileID: 1655929409325284126}
+  - component: {fileID: 350643151841765726}
   m_Layer: 0
   m_Name: Hostage
   m_TagString: Untagged
@@ -239,45 +240,14 @@ MonoBehaviour:
   - {fileID: 5286594945573508369}
   toEnable:
   - {fileID: 8445257795644114888}
---- !u!1 &15477784992721121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3196006307839206057}
-  - component: {fileID: 8200887550332627134}
-  m_Layer: 0
-  m_Name: Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3196006307839206057
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15477784992721121}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4773010845364532560}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &8200887550332627134
+  disableBehaviour: {fileID: 7512208670950964043}
+--- !u!136 &350643151841765726
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15477784992721121}
+  m_GameObject: {fileID: 2438236032673842}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2782,7 +2752,6 @@ Transform:
   - {fileID: 7011751357198470351}
   - {fileID: 2005755751752091867}
   - {fileID: 5152625328657031649}
-  - {fileID: 3196006307839206057}
   m_Father: {fileID: 493933403684568680}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
