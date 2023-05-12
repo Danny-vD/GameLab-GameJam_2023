@@ -1548,6 +1548,8 @@ GameObject:
   - component: {fileID: 5273653131051364221}
   - component: {fileID: 4591018773351376817}
   - component: {fileID: 3594106554081196772}
+  - component: {fileID: 3928886682115910200}
+  - component: {fileID: 2614324760580635202}
   m_Layer: 7
   m_Name: Hips
   m_TagString: Player
@@ -1688,6 +1690,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44e61169eb54d1cb55828f50034c674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3928886682115910200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829186542615637887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6de1eee0a8a44848d177e86caaf3272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstTimeSpawn: {fileID: 2360812028914823403, guid: 972877400b2da45f7a38a8d0953b02ca, type: 3}
+  particles: {fileID: 589554918498266872, guid: 44b3a524a94bc4a14803cd187b551dbe, type: 3}
+--- !u!114 &2614324760580635202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829186542615637887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e0fce6d5eb4bce9597482eae28a0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenSpawns: 3
+  particleSystemsToSpawn:
+  - {fileID: 1990635326446427934, guid: 508864bfcebc44b319d2a56dab9fbfe3, type: 3}
+  - {fileID: 3577888955583413274, guid: e4c66e9375672466987c205b730a99c7, type: 3}
+  - {fileID: 9111515081180300092, guid: 7402419875f314951b0b7396ac8f57a3, type: 3}
 --- !u!1 &5907075776390855394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +2015,7 @@ Transform:
   - {fileID: 5698367109886772839}
   - {fileID: 6706330206139909950}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4725599948284863423
 Animator:

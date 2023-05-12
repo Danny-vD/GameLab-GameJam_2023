@@ -42392,7 +42392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286528710041845470, guid: a727dd0ae6d15497e8e020e08a0e075a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.4
+      value: -9.41
       objectReference: {fileID: 0}
     - target: {fileID: 1286528710041845470, guid: a727dd0ae6d15497e8e020e08a0e075a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -42400,7 +42400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286528710041845470, guid: a727dd0ae6d15497e8e020e08a0e075a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.8
+      value: 8.32
       objectReference: {fileID: 0}
     - target: {fileID: 1286528710041845470, guid: a727dd0ae6d15497e8e020e08a0e075a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64322,6 +64322,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 402218, guid: 62058fe468b0eb848a0c8ec1b496b85e, type: 3}
   m_PrefabInstance: {fileID: 1356339816}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1357499348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5829186542615637887, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
+  m_PrefabInstance: {fileID: 4581693911413994074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1357499355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357499348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e0fce6d5eb4bce9597482eae28a0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenSpawns: 3
+  particleSystemsToSpawn:
+  - {fileID: 1990635326446427934, guid: 508864bfcebc44b319d2a56dab9fbfe3, type: 3}
+  - {fileID: 3577888955583413274, guid: e4c66e9375672466987c205b730a99c7, type: 3}
+  - {fileID: 9111515081180300092, guid: 7402419875f314951b0b7396ac8f57a3, type: 3}
+--- !u!114 &1357499356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357499348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6de1eee0a8a44848d177e86caaf3272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstTimeSpawn: {fileID: 2360812028914823403, guid: 972877400b2da45f7a38a8d0953b02ca, type: 3}
+  particles: {fileID: 589554918498266872, guid: 44b3a524a94bc4a14803cd187b551dbe, type: 3}
 --- !u!1001 &1359492709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107070,7 +107106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6355846145172601653, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.729
+      value: -7.7390003
       objectReference: {fileID: 0}
     - target: {fileID: 6355846145172601653, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -107078,7 +107114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6355846145172601653, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.785
+      value: 10.304999
       objectReference: {fileID: 0}
     - target: {fileID: 6355846145172601653, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -107115,7 +107151,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5829186542615637887, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1357499356}
+    - targetCorrespondingSourceObject: {fileID: 5829186542615637887, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1357499355}
   m_SourcePrefab: {fileID: 100100000, guid: 436f43cfa5f354de288a2deb72f6100d, type: 3}
 --- !u!54 &4581693911413994075 stripped
 Rigidbody:
