@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1650274285030857173}
   - component: {fileID: 1663647320943531926}
   - component: {fileID: 3243918711760889317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_MetalDetector_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

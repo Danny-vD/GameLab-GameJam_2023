@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2348860}
   - component: {fileID: 8771294480766736994}
   - component: {fileID: 9044154329711370379}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Folder_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3340684
 MeshFilter:

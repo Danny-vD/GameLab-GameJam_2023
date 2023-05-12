@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2388592}
   - component: {fileID: 1993209583498349929}
   - component: {fileID: 2028913009499159910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_WaterCooler_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 2775748371464319663}
   - component: {fileID: 2588184692977544402}
   - component: {fileID: 8866668981217084209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_WaterCooler_Tank_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

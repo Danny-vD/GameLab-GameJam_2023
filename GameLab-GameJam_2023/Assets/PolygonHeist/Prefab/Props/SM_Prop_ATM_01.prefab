@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2343798}
   - component: {fileID: 64645656371238770}
   - component: {fileID: 4753803545625789991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_ATM_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

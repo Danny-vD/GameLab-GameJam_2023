@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2318090}
   - component: {fileID: 64205567201084820}
   - component: {fileID: 64510567382456384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_SafeDepositBoxes_Looted_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
