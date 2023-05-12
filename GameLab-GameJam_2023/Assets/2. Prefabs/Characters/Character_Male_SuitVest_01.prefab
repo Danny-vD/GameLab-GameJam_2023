@@ -1551,6 +1551,8 @@ GameObject:
   - component: {fileID: 3256527689817762038}
   - component: {fileID: 3552172107715141316}
   - component: {fileID: 5273653131051364221}
+  - component: {fileID: 4591018773351376817}
+  - component: {fileID: 3594106554081196772}
   m_Layer: 7
   m_Name: Hips
   m_TagString: Untagged
@@ -1652,6 +1654,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff20e9cfede14cd29e52861de6560120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4591018773351376817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829186542615637887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc81fb37818543529c7078261a9ae927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactInput: {fileID: 3305520263628146996, guid: f6431af00ce034b438061d23ae548c4d, type: 3}
+  triggerDetectors:
+  - {fileID: 3594106554081196772}
+--- !u!114 &3594106554081196772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829186542615637887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44e61169eb54d1cb55828f50034c674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5907075776390855394
