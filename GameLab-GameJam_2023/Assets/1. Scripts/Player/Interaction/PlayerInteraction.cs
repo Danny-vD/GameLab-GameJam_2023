@@ -45,6 +45,11 @@ namespace Player.Interaction
 			if (!lastInteractable.CanInteract())
 			{
 				interactables.RemoveAll(interactable => interactable == lastInteractable);
+				
+				if (interactables.Count == 0)
+				{
+					EventManager.RaiseEvent(new CannotInteractEvent());
+				}
 			}
 		}
 
