@@ -11,7 +11,7 @@ namespace VFX
 		private GameObject firstTimeSpawn;
 
 		[SerializeField]
-		private GameObject particles;
+		private GameObject[] particles;
 
 		private GroundedChecker groundedChecker;
 
@@ -46,7 +46,7 @@ namespace VFX
 		{
 			if (spawnedFirst)
 			{
-				Instantiate(particles, position, Quaternion.identity);
+				Instantiate(particles.GetRandomElement(), position, Quaternion.identity);
 			}
 			else
 			{
