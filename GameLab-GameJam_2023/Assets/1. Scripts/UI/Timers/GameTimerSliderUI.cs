@@ -8,7 +8,7 @@ namespace UI.Timers
 {
 	public class GameTimerSliderUI : BetterMonoBehaviour
 	{
-		[SerializeField]
+		[SerializeField, Range(0, 1)]
 		private float startValue = .6666f;
 		
 		private Slider slider;
