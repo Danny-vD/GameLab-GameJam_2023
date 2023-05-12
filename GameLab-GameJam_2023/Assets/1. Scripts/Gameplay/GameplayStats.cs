@@ -1,4 +1,5 @@
-﻿using Events.Gameplay;
+﻿using Events;
+using Events.Gameplay;
 using Events.ScoreSystem;
 using Singletons;
 using UI.Counters;
@@ -17,6 +18,7 @@ namespace Gameplay
 		{
 			GameTimerExpiredEvent.ParameterlessListeners += UpdateStats;
 			MoneyDepletedEvent.ParameterlessListeners    += UpdateStats;
+			FreedAllHostagesEvent.ParameterlessListeners += UpdateStats;
 
 			hostageCount = FindObjectOfType<HostageCount>();
 		}
@@ -35,6 +37,7 @@ namespace Gameplay
 		{
 			GameTimerExpiredEvent.ParameterlessListeners -= UpdateStats;
 			MoneyDepletedEvent.ParameterlessListeners    -= UpdateStats;
+			FreedAllHostagesEvent.ParameterlessListeners -= UpdateStats;
 		}
 	}
 }
