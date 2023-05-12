@@ -1,4 +1,5 @@
-﻿using Console.Commands;
+﻿using System;
+using Console.Commands;
 using Singletons;
 using VDFramework;
 
@@ -31,6 +32,12 @@ namespace Commands
 		private static void ResumeTimer()
 		{
 			GameTimerManager.Instance.TimerHandle.SetPause(false);
+		}
+
+		private void OnDestroy()
+		{
+			CommandManager.RemoveCommand(resumeCommand);
+			CommandManager.RemoveCommand(pauseCommand);
 		}
 	}
 }
