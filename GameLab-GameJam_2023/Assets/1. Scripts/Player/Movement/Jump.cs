@@ -40,5 +40,10 @@ namespace Player.Movement
 			
 			OnJump.Invoke();
 		}
+
+		private void OnDestroy()
+		{
+			jumpInput.action.performed -= RigidbodyJump;
+		}
 	}
 }
