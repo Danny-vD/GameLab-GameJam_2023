@@ -7,49 +7,54 @@ using VDFramework.Utility.TimerUtil.TimerHandles;
 
 namespace Singletons
 {
-    public class GameTimerManager : Singleton<GameTimerManager>
-    {
-        [SerializeField]
-        private int minutes;
+	public class GameTimerManager : Singleton<GameTimerManager>
+	{
+		[SerializeField]
+		private int minutes;
 
-        [SerializeField]
-        private int seconds;
+		[SerializeField]
+		private int seconds;
 
-        private double totalSeconds;
+		private double totalSeconds;
 
-        public int Minutes => (int)(TimerHandle.CurrentTime / 60); // Floors to int
+		public int Minutes => (int)(TimerHandle.CurrentTime / 60); // Floors to int
 
-        public int Seconds => (int)(TimerHandle.CurrentTime % 60);
+		public int Seconds => (int)(TimerHandle.CurrentTime % 60);
 
-        public TimerHandle TimerHandle { get; private set; }
+		public TimerHandle TimerHandle { get; private set; }
 
-        protected override void Awake()
-        {
-            base.Awake();
+		protected override void Awake()
+		{
+			base.Awake();
 
-            totalSeconds = seconds + minutes * 60;
+			totalSeconds = seconds + minutes * 60;
 
-            TimerHandle = TimerManager.StartNewTimer(totalSeconds, GameTimerExpired);
-            TimerHandle.SetPause(true);
+			TimerHandle = TimerManager.StartNewTimer(totalSeconds, GameTimerExpired);
+			TimerHandle.SetPause(true);
 
-            PlayerReachedGroundEvent.ParameterlessListeners += StartTimer;
-        }
+			PlayerReachedGroundEvent.ParameterlessListeners += StartTimer;
+		}
 
-        private void StartTimer()
-        {
-            TimerHandle.SetPause(false);
-        }
+		private void StartTimer()
+		{
+			TimerHandle.SetPause(false);
+		}
 
-        private static void GameTimerExpired()
-        {
-            EventManager.RaiseEvent(new GameTimerExpiredEvent());
-        }
+		private static void GameTimerExpired()
+		{
+			EventManager.RaiseEvent(new GameTimerExpiredEvent());
+		}
 
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
-            
-            PlayerReachedGroundEvent.ParameterlessListeners -= StartTimer;
-        }
-    }
+		protected override void OnDestroy()
+		{
+			if (TimerHandle.IsTicking)
+			{
+				TimerHandle.Stop();
+			}
+
+			base.OnDestroy();
+
+			PlayerReachedGroundEvent.ParameterlessListeners -= StartTimer;
+		}
+	}
 }

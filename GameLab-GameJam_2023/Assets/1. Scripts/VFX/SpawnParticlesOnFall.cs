@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Events.Gameplay;
+using UnityEngine;
 using Utility.PhysicsUtil;
 using VDFramework;
 using VDFramework.Extensions;
@@ -22,6 +23,10 @@ namespace VFX
 		private void Awake()
 		{
 			groundedChecker = GetComponent<GroundedChecker>();
+
+			LevelStartedEvent.ParameterlessListeners += Enable;
+			
+			Disable();
 		}
 
 		private void Update()
@@ -42,6 +47,16 @@ namespace VFX
 			}
 		}
 
+		private void Enable()
+		{
+			enabled = true;
+		}
+
+		private void Disable()
+		{
+			enabled = false;
+		}
+
 		private void SpawnParticle(Vector3 position)
 		{
 			if (spawnedFirst)
@@ -53,6 +68,11 @@ namespace VFX
 				Instantiate(firstTimeSpawn, position, Quaternion.identity);
 				spawnedFirst = true;
 			}
+		}
+
+		private void OnDestroy()
+		{
+			LevelStartedEvent.ParameterlessListeners -= Enable;
 		}
 	}
 }

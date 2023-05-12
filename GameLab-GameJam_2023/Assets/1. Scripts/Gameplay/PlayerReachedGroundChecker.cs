@@ -1,5 +1,4 @@
-﻿using System;
-using Events.Gameplay;
+﻿using Events.Gameplay;
 using Utility.PhysicsUtil;
 using VDFramework;
 using VDFramework.EventSystem;
@@ -14,17 +13,17 @@ namespace Gameplay
 		{
 			groundedChecker = GetComponent<GroundedChecker>();
 
-			StopChecking();
+			Disable();
 			
-			LevelStartedEvent.ParameterlessListeners += StartChecking;
+			LevelStartedEvent.ParameterlessListeners += Enable;
 		}
 
-		private void StartChecking()
+		private void Enable()
 		{
 			enabled = true;
 		}
 
-		private void StopChecking()
+		private void Disable()
 		{
 			enabled = false;
 		}
@@ -33,7 +32,7 @@ namespace Gameplay
 		{
 			if (groundedChecker.IsGrounded)
 			{
-				StopChecking();
+				Disable();
 				
 				EventManager.RaiseEvent(new PlayerReachedGroundEvent());
 				
@@ -43,7 +42,7 @@ namespace Gameplay
 
 		private void OnDestroy()
 		{
-			LevelStartedEvent.ParameterlessListeners -= StartChecking;
+			LevelStartedEvent.ParameterlessListeners -= Enable;
 		}
 	}
 }
