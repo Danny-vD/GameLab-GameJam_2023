@@ -10,7 +10,7 @@ namespace Player.Movement
         private InputActionReference movementInput;
 
         [SerializeField]
-        private float forceMultiplier = 2;
+        private float forceMultiplier = 150;
         
         private Rigidbody rigidbdy;
 

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using VDFramework;
 
@@ -6,6 +7,8 @@ namespace PhysicsScripts
 {
 	public class ReleaseJointOnInput : BetterMonoBehaviour
 	{
+		public event Action OnRelease = delegate { };
+		
 		[SerializeField]
 		private InputActionReference releaseInput;
 
@@ -31,6 +34,8 @@ namespace PhysicsScripts
 		private void ReleaseJoint(InputAction.CallbackContext callbackContext)
 		{
 			joint.connectedBody = null;
+			
+			OnRelease.Invoke();
 		}
 	}
 }

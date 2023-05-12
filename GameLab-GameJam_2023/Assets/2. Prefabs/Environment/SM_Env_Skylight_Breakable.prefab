@@ -1743,8 +1743,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fde4b4aeedf84de29015a9509f626dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Disable: {fileID: 7347267956426984604}
-  Enable: {fileID: 8318529348975524084}
+  toDisable: {fileID: 7347267956426984604}
+  toEnable: {fileID: 8318529348975524084}
+  switchOnTag:
+  - Player
 --- !u!1 &3064760682606287896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,8 +2867,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fde4b4aeedf84de29015a9509f626dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Disable: {fileID: 2391987947649584391}
-  Enable: {fileID: 24430331385166350}
+  toDisable: {fileID: 2391987947649584391}
+  toEnable: {fileID: 24430331385166350}
+  switchOnTag:
+  - Player
 --- !u!1 &5474406777973926328
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,8 +3325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fde4b4aeedf84de29015a9509f626dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Disable: {fileID: 5993306103952970404}
-  Enable: {fileID: 5474406777973926328}
+  toDisable: {fileID: 5993306103952970404}
+  toEnable: {fileID: 5474406777973926328}
+  switchOnTag:
+  - Player
 --- !u!1 &6925571644178239529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,8 +3746,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fde4b4aeedf84de29015a9509f626dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Disable: {fileID: 4868350459742430089}
-  Enable: {fileID: 3150712864168322878}
+  toDisable: {fileID: 4868350459742430089}
+  toEnable: {fileID: 3150712864168322878}
+  switchOnTag:
+  - Player
 --- !u!1 &8049581178298948246
 GameObject:
   m_ObjectHideFlags: 0

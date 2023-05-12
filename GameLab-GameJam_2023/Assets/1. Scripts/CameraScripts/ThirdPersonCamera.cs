@@ -9,7 +9,7 @@ namespace CameraScripts
 		[SerializeField]
 		private InputActionReference mouseDelta;
 
-		[SerializeField, Tooltip("The transform that will be followed by ")]
+		[SerializeField, Tooltip("The transform that will be followed by the camera")]
 		private Transform target;
 
 		[SerializeField, Tooltip("The maximum distance the camera will be from the target")]

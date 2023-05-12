@@ -1,11 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using VDFramework;
 
 namespace Player.Movement
 {
-	public class CharacterJump : BetterMonoBehaviour
+	public class Jump : BetterMonoBehaviour
 	{
+		public event Action OnJump = delegate { };
+		
 		[SerializeField]
 		private InputActionReference jumpInput;
 
@@ -18,7 +21,7 @@ namespace Player.Movement
 		{
 			rigidbdy = GetComponent<Rigidbody>();
 
-			jumpInput.action.performed += Jump;
+			jumpInput.action.performed += RigidbodyJump;
 		}
 
 		private void OnEnable()
@@ -31,9 +34,11 @@ namespace Player.Movement
 			jumpInput.action.Disable();
 		}
 
-		private void Jump(InputAction.CallbackContext obj)
+		private void RigidbodyJump(InputAction.CallbackContext obj)
 		{
 			rigidbdy.AddForce(Vector3.up * jumpForce);
+			
+			OnJump.Invoke();
 		}
 	}
 }
