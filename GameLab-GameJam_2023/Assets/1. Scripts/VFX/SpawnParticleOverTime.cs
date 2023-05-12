@@ -1,4 +1,5 @@
-﻿using Events.Gameplay;
+﻿using System;
+using Events.Gameplay;
 using UnityEngine;
 using Utility.PhysicsUtil;
 using VDFramework;
@@ -19,6 +20,11 @@ namespace VFX
 		private GroundedChecker groundedChecker;
 
 		private TimerHandle timerHandle;
+
+		private void Awake()
+		{
+			groundedChecker = GetComponent<GroundedChecker>();
+		}
 
 		private void Start()
 		{
