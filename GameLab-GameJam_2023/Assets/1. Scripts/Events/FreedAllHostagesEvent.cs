@@ -1,7 +1,6 @@
-﻿using VDFramework;
-using VDFramework.EventSystem;
+﻿using VDFramework.EventSystem;
 
-namespace Gameplay
+namespace Events
 {
 	public class FreedAllHostagesEvent : VDEvent<FreedAllHostagesEvent>
 	{
