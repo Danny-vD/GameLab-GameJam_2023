@@ -1,4 +1,5 @@
-﻿using Events.Gameplay;
+﻿using System;
+using Events.Gameplay;
 using Gameplay;
 using Gameplay.Interactables;
 using TMPro;
@@ -43,6 +44,11 @@ namespace UI.Counters
 		private void UpdateUI()
 		{
 			amountLabel.text = HostagesRemaining.ToString();
+		}
+
+		private void OnDestroy()
+		{
+			EventManager.RemoveListener<HostageFreedEvent>(UpdateRemaining);
 		}
 	}
 }

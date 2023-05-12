@@ -52,6 +52,7 @@ namespace UI.Timers
 		private void OnDestroy()
 		{
 			GameTimerExpiredEvent.ParameterlessListeners -= Disable;
+			LevelStartedEvent.ParameterlessListeners     -= Enable;
 		}
 	}
 }

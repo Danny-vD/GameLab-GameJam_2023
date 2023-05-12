@@ -1,4 +1,5 @@
-﻿using Events.Gameplay;
+﻿using System;
+using Events.Gameplay;
 using Utility.PhysicsUtil;
 using VDFramework;
 using VDFramework.EventSystem;
@@ -38,6 +39,11 @@ namespace Gameplay
 				
 				Destroy(this);
 			}
+		}
+
+		private void OnDestroy()
+		{
+			LevelStartedEvent.ParameterlessListeners -= StartChecking;
 		}
 	}
 }

@@ -1,4 +1,5 @@
-﻿using Events.Gameplay;
+﻿using System;
+using Events.Gameplay;
 using Utility.PhysicsUtil;
 using VDFramework;
 
@@ -56,6 +57,11 @@ namespace Player.Movement
 		private void CanJump(bool setEnabled)
 		{
 			jump.enabled = setEnabled;
+		}
+
+		private void OnDestroy()
+		{
+			PlayerReachedGroundEvent.ParameterlessListeners -= StartChecking;
 		}
 	}
 }

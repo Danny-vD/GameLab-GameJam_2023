@@ -35,7 +35,7 @@ namespace UI.SpriteScripts
 			SetAlpha(0);
 		}
 		
-		private void SetAlpha(int alpha)
+		private void SetAlpha(float alpha)
 		{
 			Color imageColor = image.color;
 			imageColor.a = alpha;
