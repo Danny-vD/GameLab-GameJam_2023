@@ -8,7 +8,7 @@ namespace UI.SpriteScripts
 	public class FadeInAtPercentageTime : BetterMonoBehaviour
 	{
 		[SerializeField, Range(0, 1)]
-		private float fadeinAtPercentage = 0.5f;
+		private float fadeInAtPercentage = 0.5f;
 		
 		private Image image;
 
@@ -21,7 +21,7 @@ namespace UI.SpriteScripts
 		{
 			double percentage = GameTimerManager.Instance.TimerHandle.CurrentTimeNormalized;
 
-			if (percentage <= fadeinAtPercentage)
+			if (percentage <= fadeInAtPercentage)
 			{
 				if (percentage <= 0)
 				{
@@ -29,7 +29,7 @@ namespace UI.SpriteScripts
 					return;
 				}
 				
-				float normalizedValue = (float)(percentage / fadeinAtPercentage);
+				float normalizedValue = (float)(percentage / fadeInAtPercentage);
 				
 				SetAlpha(1 - normalizedValue); // We want to fade in, so we start at 0
 			}
