@@ -1,4 +1,5 @@
 ﻿using Events;
+using Events.ScoreSystem;
 using Gameplay.ScoreSystem;
 using VDFramework.EventSystem;
 using VDFramework.Singleton;
@@ -24,6 +25,11 @@ namespace Singletons
 			ChangeAmountInternal(delta);
 			
 			EventManager.RaiseEvent(new MoneyAmountChangedEvent(delta, CurrentAmount));
+
+			if (CurrentAmount <= 0)
+			{
+				EventManager.RaiseEvent(new MoneyDepletedEvent());
+			}
 		}
 
 		private void ChangeAmountInternal(int delta)
