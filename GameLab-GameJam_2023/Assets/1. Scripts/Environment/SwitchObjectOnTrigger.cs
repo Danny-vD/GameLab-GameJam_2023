@@ -1,17 +1,14 @@
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 using VDFramework;
 
 namespace Environment
 {
     public class SwitchObjectOnTrigger : BetterMonoBehaviour
     {
-        [FormerlySerializedAs("Disable")]
         [SerializeField]
         private GameObject toDisable;
-
-        [FormerlySerializedAs("Enable")]
+        
         [SerializeField]
         private GameObject toEnable;
 
