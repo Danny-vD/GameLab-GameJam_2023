@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 452296}
   - component: {fileID: 3353368}
   - component: {fileID: 2327572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_DisplayCase_Glass_1_Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2666523770353814775}
   - component: {fileID: 7678529347861346166}
   - component: {fileID: 8934055893195696334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_DisplayCase_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,10 +374,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toDisable:
   - {fileID: 132572}
-  - {fileID: 0}
   toEnable:
   - {fileID: 2825383246984571250}
   - {fileID: 8744087471089228086}
+  disableBehaviour: {fileID: 2666523770353814775}
+  colliders:
+  - {fileID: 8934055893195696334}
 --- !u!65 &8934055893195696334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -410,7 +412,7 @@ GameObject:
   - component: {fileID: 446176}
   - component: {fileID: 3396898}
   - component: {fileID: 2392764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_DisplayCase_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4834832435253908089}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jewelry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,6 +527,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4834832435253908089}
     m_Modifications:
+    - target: {fileID: 146268, guid: 2c967591c7265ca438d8aef613d2a787, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 497954, guid: 2c967591c7265ca438d8aef613d2a787, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -580,6 +586,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4834832435253908089}
     m_Modifications:
+    - target: {fileID: 198710, guid: 39bc4c11aa15b70429dc869ba6f127d0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 401974, guid: 39bc4c11aa15b70429dc869ba6f127d0, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -635,6 +645,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4834832435253908089}
     m_Modifications:
+    - target: {fileID: 187834, guid: 08a154304c1d7ef4fa34e543e2237aa6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 420176, guid: 08a154304c1d7ef4fa34e543e2237aa6, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -690,9 +704,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 400500}
     m_Modifications:
+    - target: {fileID: 1110194618268338, guid: c9eb15264aa6c4348b00d5b9b3daab2a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401144356795264, guid: c9eb15264aa6c4348b00d5b9b3daab2a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542763246697014, guid: c9eb15264aa6c4348b00d5b9b3daab2a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1624714524768532, guid: c9eb15264aa6c4348b00d5b9b3daab2a, type: 3}
       propertyPath: m_Name
       value: DespawnVFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624714524768532, guid: c9eb15264aa6c4348b00d5b9b3daab2a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1624714524768532, guid: c9eb15264aa6c4348b00d5b9b3daab2a, type: 3}
       propertyPath: m_IsActive
