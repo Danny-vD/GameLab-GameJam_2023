@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8211786576757034553}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broken Glass 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 8794208725327381931}
   - component: {fileID: 7710684815368663914}
   - component: {fileID: 5967192065083295396}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 6145780966964445048}
   - component: {fileID: 4097532573739560755}
   - component: {fileID: 8089558799422502181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 3493511115079712887}
   - component: {fileID: 3069196841403899438}
   - component: {fileID: 9215147970315108813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 1124734564199282646}
   - component: {fileID: 3743948002360812473}
   - component: {fileID: 2662021159643325054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 2169153153474986437}
   - component: {fileID: 3908791909795203824}
   - component: {fileID: 6675082801904420941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 3102790299350375507}
   - component: {fileID: 6403236722857040923}
   - component: {fileID: 6945423421707769174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 3666303301299798110}
   - component: {fileID: 4657107750777363658}
   - component: {fileID: 3937099886158850968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 2572496981490530871}
   - component: {fileID: 929043595677201873}
   - component: {fileID: 9175080959443268153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1116,7 +1116,7 @@ GameObject:
   - component: {fileID: 2162033570077654932}
   - component: {fileID: 774437094668776552}
   - component: {fileID: 7274813477190879137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1250,7 +1250,7 @@ GameObject:
   - component: {fileID: 7769786497207646140}
   - component: {fileID: 540617993628838885}
   - component: {fileID: 6213695845387973297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1381,7 +1381,7 @@ GameObject:
   - component: {fileID: 6292842168398015912}
   - component: {fileID: 8903505920322490329}
   - component: {fileID: 3667885810207733574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glass 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1471,7 +1471,7 @@ GameObject:
   - component: {fileID: 1604502253041776431}
   - component: {fileID: 3511714437598118062}
   - component: {fileID: 7054706712936332924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Env_Skylight_Breakable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1688,7 +1688,7 @@ GameObject:
   - component: {fileID: 8395041173658928421}
   - component: {fileID: 5838072691221513777}
   - component: {fileID: 1746751751829723769}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BreakingTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 1111713009965603054}
   - component: {fileID: 5312234906989255760}
   - component: {fileID: 7505450114188020141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1891,7 +1891,7 @@ GameObject:
   - component: {fileID: 2146763455349867273}
   - component: {fileID: 1884556352778523014}
   - component: {fileID: 8774544859271816286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2020,7 +2020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8334323470153053905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broken Glass 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2061,7 +2061,7 @@ GameObject:
   - component: {fileID: 4038058589211660581}
   - component: {fileID: 8728998704235558046}
   - component: {fileID: 7103665683606127358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2195,7 +2195,7 @@ GameObject:
   - component: {fileID: 1063463079629927218}
   - component: {fileID: 139281889115422247}
   - component: {fileID: 1759778949089520308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2328,7 +2328,7 @@ GameObject:
   - component: {fileID: 7696927964206594489}
   - component: {fileID: 6875511178825127649}
   - component: {fileID: 6636767337508019747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2462,7 +2462,7 @@ GameObject:
   - component: {fileID: 4752870259996904473}
   - component: {fileID: 8222619740411158336}
   - component: {fileID: 7351855848112634563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2593,7 +2593,7 @@ GameObject:
   - component: {fileID: 539066387442975919}
   - component: {fileID: 1381177827581362025}
   - component: {fileID: 7952223661359179962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glass 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2679,7 +2679,7 @@ GameObject:
   - component: {fileID: 1475711669101528311}
   - component: {fileID: 7607330129945710214}
   - component: {fileID: 5770520007353963839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2810,7 +2810,7 @@ GameObject:
   - component: {fileID: 4586495132494586598}
   - component: {fileID: 8358062641482092586}
   - component: {fileID: 1091497317328512726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BreakingTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2876,7 +2876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2059528727915352060}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broken Glass 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +2917,7 @@ GameObject:
   - component: {fileID: 2280250969439253688}
   - component: {fileID: 7771648328480825322}
   - component: {fileID: 4195463388606321410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3049,7 +3049,7 @@ GameObject:
   - component: {fileID: 2534144495975908816}
   - component: {fileID: 1697721756990217842}
   - component: {fileID: 6804500957605391456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glass 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3135,7 +3135,7 @@ GameObject:
   - component: {fileID: 2914699246232439058}
   - component: {fileID: 1869270000518958284}
   - component: {fileID: 293536750866323994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3266,7 +3266,7 @@ GameObject:
   - component: {fileID: 8771742058195608314}
   - component: {fileID: 3965219230740485665}
   - component: {fileID: 1885822706890667471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BreakingTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3336,7 +3336,7 @@ GameObject:
   - component: {fileID: 227766591081333322}
   - component: {fileID: 2729876203208609503}
   - component: {fileID: 2129212373185602093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3469,7 +3469,7 @@ GameObject:
   - component: {fileID: 5007283809808235891}
   - component: {fileID: 7229327600716712676}
   - component: {fileID: 5849794906022367382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3601,7 +3601,7 @@ GameObject:
   - component: {fileID: 4513824508014928175}
   - component: {fileID: 1671473240713470742}
   - component: {fileID: 5062097489772192482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glass 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3685,7 +3685,7 @@ GameObject:
   - component: {fileID: 5627914201607905254}
   - component: {fileID: 4466261498419644573}
   - component: {fileID: 8879155798831587721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BreakingTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3755,7 +3755,7 @@ GameObject:
   - component: {fileID: 2803375162773154432}
   - component: {fileID: 5348303944778149529}
   - component: {fileID: 7752380033297600569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3889,7 +3889,7 @@ GameObject:
   - component: {fileID: 1710444022008222232}
   - component: {fileID: 6217870792142986448}
   - component: {fileID: 4066080518174522463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4018,7 +4018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3114857098312818778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broken Glass 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4059,7 +4059,7 @@ GameObject:
   - component: {fileID: 864195816444674396}
   - component: {fileID: 4776937502054325150}
   - component: {fileID: 3365885588815769243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shard3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
