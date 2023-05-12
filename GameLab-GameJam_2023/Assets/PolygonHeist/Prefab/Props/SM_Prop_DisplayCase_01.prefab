@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 2666523770353814775}
   - component: {fileID: 7678529347861346166}
   - component: {fileID: 8934055893195696334}
+  - component: {fileID: 8475238793809618755}
   m_Layer: 8
   m_Name: SM_Prop_DisplayCase_01
   m_TagString: Untagged
@@ -401,6 +402,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.182229, y: 1.9413505, z: 1}
   m_Center: {x: -0, y: 0.47067523, z: 0}
+--- !u!114 &8475238793809618755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ffad7993584c279177da2595518b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ScoreDelta>k__BackingField: -20000
 --- !u!1 &168556
 GameObject:
   m_ObjectHideFlags: 0
