@@ -94,5 +94,16 @@ namespace Player.Interaction
 		{
 			interactInput.action.Enable();
 		}
+
+		private void OnDestroy()
+		{
+			foreach (TriggerCallback triggerDetector in triggerDetectors)
+			{
+				triggerDetector.OnTriggerEntered -= OnTriggerEntered;
+				triggerDetector.OnTriggerExited  -= OnTriggerExited;
+			}
+
+			interactInput.action.performed -= Interact;
+		}
 	}
 }
